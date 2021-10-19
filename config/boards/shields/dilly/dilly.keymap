@@ -9,6 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/backlight.h>
 
 #define BASE  0     // alphas (Colemak-DH)
 #define QWRTY 1     // alphas (Qwerty)
@@ -239,13 +240,13 @@
 //  v----------- RGB -----------v
 // -------------------------------------------------------------
 // |Bri+ |Sat+ |Hue+ |Ani+ |Toggl|BTClr| BT0 | BT1 | BT2 | BT3 |
-// |Bri- |Sat- |Hue- |Ani- |     |     |Colmk|Qwrty|     |     |
-// | USB | BLE |     |     | *** | *** |     |     |Reset|BootL|
+// |Bri- |Sat- |Hue- |Ani- |BLtog|     |Colmk|Qwrty|     |     |
+// | USB | BLE | BL- | BL+ | *** | *** |     |     |Reset|BootL|
 // -------------------------------------------------------------
             bindings = <
     &rgb_ug RGB_BRI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_EFF &rgb_ug RGB_TOG &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3
-    &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &none           &none      &to BASE     &to QWRTY    &none        &none
-    &out OUT_USB    &out OUT_BLE    &none           &trans          &none           &none      &trans       &none        &reset       &bootloader
+    &rgb_ug RGB_BRD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_EFR &bl BL_TOG      &none      &to BASE     &to QWRTY    &none        &none
+    &out OUT_USB    &out OUT_BLE    &bl BL_DEC      &bl BL_INC      &trans          &trans     &none        &none        &reset       &bootloader
             >;
         };
     };
