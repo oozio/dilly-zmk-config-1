@@ -57,7 +57,7 @@
         compatible = "pwm-leds";
         label = "Backlight LEDs";
         pwm_led_0 {
-            // pin P1.02
+            // Use P1.04 for LED backlight
             pwms = <&pwm0 36>;
         };
     };
