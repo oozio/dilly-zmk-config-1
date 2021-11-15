@@ -157,12 +157,12 @@
 // -------------------------------------------------------------
 // Colemak-DH
 // -------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  B  |  J  |  L  |  U  |  Y  |  ;  |
+// |  Q  |  W  |  F  |  P  |  B  |  J  |  L  |  U  |  Y  |ADJST|
 // |  A  |  R  |  S  |  T  |  G  |  M  |  N  |  E  |  I  |  O  |
 // | Tab |  X  |  C  |  D  |BkSpc| Spc |  H  |  ,  |  .  |Enter|
 // -------------------------------------------------------------
             bindings = < 
-    &kp Q         &kp W      &kp F      &kp P      &kp B         &kp J          &kp L      &kp U      &kp Y      &kp SEMI
+    &kp Q         &kp W      &kp F      &kp P      &kp B         &kp J          &kp L      &kp U      &kp Y      &to ADJST
     &hm LCTRL A   &hm LALT R &hm LGUI S &hm LSFT T &kp G         &kp M          &hm RSFT N &hm RGUI E &hm RALT I &hm RCTRL O
     &lt KEYPD TAB &kp X      &kp C      &lt NAV D  &mt LSFT BSPC &mt RSFT SPACE &lt FUNC H &kp COMMA  &kp DOT    &kp ENTER
             >;
@@ -177,12 +177,12 @@
 // -------------------------------------------------------------
 // Qwerty
 // -------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |
+// |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |ADJST|
 // |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |
 // | Tab |  X  |  C  |  V  |BkSpc| Spc |  M  |  ,  |  .  |Enter|
 // -------------------------------------------------------------
             bindings = < 
-    &kp Q         &kp W      &kp E      &kp R      &kp T         &kp Y          &kp U      &kp I      &kp O      &kp P
+    &kp Q         &kp W      &kp E      &kp R      &kp T         &kp Y          &kp U      &kp I      &kp O      &to ADJST
     &hm LCTRL A   &hm LALT S &hm LGUI D &hm LSFT F &kp G         &kp H          &hm RSFT J &hm RGUI K &hm RALT L &hm RCTRL SEMI
     &lt KEYPD TAB &kp X      &kp C      &lt NAV V  &mt LSFT BSPC &mt RSFT SPACE &lt FUNC M &kp COMMA  &kp DOT    &kp ENTER
             >;
