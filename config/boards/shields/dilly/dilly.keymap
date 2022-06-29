@@ -14,7 +14,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-            qwerty_layer {
+            default_layer  {
                 // (Hold)
                 // -------------------------------------------------------------
                 // |     |     |     |     |     |     |     |     |     |     |
