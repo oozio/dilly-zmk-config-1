@@ -147,26 +147,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty_layer {
-// (Hold)
-// -------------------------------------------------------------
-// |     |     |     |     |     |     |     |     |     |     |
-// |Ctrl | Alt | Gui |Shift|     |     |Shift| Gui | Alt |Ctrl |
-// |KEYPD|     |     | NAV |LShft|RShft|FUNC |     |     |     |
-// -------------------------------------------------------------
-// Colemak-DH
-// -------------------------------------------------------------
-// |  Q  |  W  |  F  |  P  |  B  |  J  |  L  |  U  |  Y  |  ;  |
-// |  A  |  R  |  S  |  T  |  G  |  M  |  N  |  E  |  I  |  O  |
-// | Tab |  X  |  C  |  D  |BkSpc| Spc |  H  |  ,  |  .  |Enter|
-// -------------------------------------------------------------
-            bindings = < 
-    &kp Q         &kp W      &kp F      &kp P      &kp B         &kp J          &kp L      &kp U      &kp Y      &kp SEMI
-    &hm LCTRL A   &hm LALT R &hm LGUI S &hm LSFT T &kp G         &kp M          &hm RSFT N &hm RGUI E &hm RALT I &hm RCTRL O
-    &lt KEYPD TAB &kp X      &kp C      &lt NAV D  &mt LSFT BSPC &mt RSFT SPACE &lt FUNC H &kp COMMA  &kp DOT    &kp ENTER
-            >;
-        } ;
-
+        
         default_layer {
 // (Hold)
 // -------------------------------------------------------------
@@ -184,6 +165,26 @@
     &kp Q         &kp W      &kp E      &kp R      &kp T         &kp Y          &kp U      &kp I      &kp O      &kp P
     &hm LCTRL A   &hm LALT S &hm LGUI D &hm LSFT F &kp G         &kp H          &hm RSFT J &hm RGUI K &hm RALT L &hm RCTRL ENTER
     &hm LSHIFT Z  &kp X      &kp C      &lt NAV V  &kp B         &mt LSFT BSPC  &kp SPACE  &lt FUNC N &kp M      &kp DOT 
+            >;
+        } ;
+        
+        colemak_layer {
+// (Hold)
+// -------------------------------------------------------------
+// |     |     |     |     |     |     |     |     |     |     |
+// |Ctrl | Alt | Gui |Shift|     |     |Shift| Gui | Alt |Ctrl |
+// |KEYPD|     |     | NAV |LShft|RShft|FUNC |     |     |     |
+// -------------------------------------------------------------
+// Colemak-DH
+// -------------------------------------------------------------
+// |  Q  |  W  |  F  |  P  |  B  |  J  |  L  |  U  |  Y  |  ;  |
+// |  A  |  R  |  S  |  T  |  G  |  M  |  N  |  E  |  I  |  O  |
+// | Tab |  X  |  C  |  D  |BkSpc| Spc |  H  |  ,  |  .  |Enter|
+// -------------------------------------------------------------
+            bindings = < 
+    &kp Q         &kp W      &kp F      &kp P      &kp B         &kp J          &kp L      &kp U      &kp Y      &kp SEMI
+    &hm LCTRL A   &hm LALT R &hm LGUI S &hm LSFT T &kp G         &kp M          &hm RSFT N &hm RGUI E &hm RALT I &hm RCTRL O
+    &lt KEYPD TAB &kp X      &kp C      &lt NAV D  &mt LSFT BSPC &mt RSFT SPACE &lt FUNC H &kp COMMA  &kp DOT    &kp ENTER
             >;
         } ;
 
